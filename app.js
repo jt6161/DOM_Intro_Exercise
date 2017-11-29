@@ -23,8 +23,4 @@ newimg.src = "http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif";
 document.getElementById('greeting').appendChild(newimg);
 
 
-Element.prototype.addClassName = function (selected) {
-  if (!this.hasClassName(selected)) {
-    this.className = [this.className,]
-  }
-}
+document.querySelector(li).classList.add(selected);
