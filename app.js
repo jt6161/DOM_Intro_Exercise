@@ -57,7 +57,7 @@ $(document).ready(function() {
   $('#resize').hover(function() {
     $(this).width(newWidth);
   }, function() {
-    $(this).width(newWidth).remove();
+    $(this).width(newWidth/2);
   });
 
 
