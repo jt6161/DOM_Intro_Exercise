@@ -49,11 +49,16 @@ $(document).ready(function() {
     'src': '/Users/TheOrchard/workspace/DOM_Intro_Exercise/images/beer.jpeg'
   });
 
-  $('#ghosting').on("click",function() {
-    $(this).hide('#ghosting')
+  $('#ghosting').on("click", function() {
+    $(this).remove('#ghosting')
   });
 
-
+  let newWidth = 400;
+  $('#resize').hover(function() {
+    $(this).width(newWidth);
+  }, function() {
+    $(this).width(newWidth).remove();
+  });
 
 
 
