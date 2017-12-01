@@ -45,6 +45,16 @@ $(document).ready(function() {
   });
 
 
+  let nextImg = $(this).find('img').eq(1);
+  nextImg.attr({
+    'src': '/Users/TheOrchard/workspace/DOM_Intro_Exercise/images/beer.jpeg'
+  });
+
+
+
+
+
+
 
 
 })
