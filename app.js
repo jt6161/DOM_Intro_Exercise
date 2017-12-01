@@ -29,13 +29,22 @@
 
 $(document).ready(function() {
 
-$('#greeting').text("HELLO WORLD!");
+  $('#greeting').text("HELLO WORLD!");
 
-$("li").css('background-color', "yellow");
+  $("li").css('background-color', "yellow");
 
-let newimg = $('<img>');
-newimg.attr({'src': 'http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif'})
-.appendTo("#greeting");
+  let newimg = $('<img>');
+  newimg.attr({
+      'src': 'http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif'
+    })
+    .appendTo("#greeting");
+
+  $('li').on("click", function() {
+    $('li').removeClass('selected');
+    $(this).addClass("selected");
+  });
+
+
 
 
 })
