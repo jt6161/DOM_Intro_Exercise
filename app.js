@@ -57,8 +57,22 @@ $(document).ready(function() {
   $('#resize').hover(function() {
     $(this).width(newWidth);
   }, function() {
-    $(this).width(newWidth/2);
+    $(this).width(newWidth / 2);
   });
+
+
+  $("#reset").on("click", function() {
+    $('li').removeClass('selected');
+    nextImg.attr({
+      'src': '/Users/TheOrchard/workspace/DOM_Intro_Exercise/images/panic.jpeg'
+    });
+  });
+
+let num = (1)
+  $(num).on("click", function() {
+    alert("I HATE NUMBERZZZ!");
+  })
+
 
 
 
